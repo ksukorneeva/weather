@@ -1,0 +1,22 @@
+.countries {
+    display: flex;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    height: 30px;
+    
+    svg {
+        border-radius: 50%;
+        border: 1px solid #343d4b;
+        transition: .25s;
+        
+        &+svg {
+            margin-left: 20px;
+        }
+
+        &:hover, 
+        &.active {
+            border: 1px solid #fff;
+        }
+    }
+}
