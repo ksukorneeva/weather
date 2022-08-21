@@ -28,7 +28,7 @@ function App() {
         e.preventDefault();
         setIsLoading(true);
         const res = await axios.get(
-            `http://api.weatherapi.com/v1/forecast.json?key=1da4b67b2d6a4e42836175222220906&q=${city}&days=7&aqi=no&alerts=no`
+            `https://api.weatherapi.com/v1/forecast.json?key=1da4b67b2d6a4e42836175222220906&q=${city}&days=7&aqi=no&alerts=no`
         );
         setCurrentCity(res.data);
         setIsLoading(false);
